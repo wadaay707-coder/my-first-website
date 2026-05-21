@@ -186,3 +186,43 @@ button:hover{
     max-width:800px;
     margin:auto;
 }
+/* Services */
+.services{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.services h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.services-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.service-card{
+    width:300px;
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.service-card p{
+    font-size:18px;
+    line-height:1.7;
+}
