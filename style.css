@@ -1,15 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
 body{
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: white;
-    padding-top: 100px;
+    background: linear-gradient(to right,#1e3c72,#2a5298);
+    color:white;
 }
 
-h1{
-    font-size: 40px;
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
 }
 
-p{
-    font-size: 22px;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    animation:fadeIn 2s ease;
+}
+
+.hero img{
+    width:150px;
+    border-radius:50%;
+    border:4px solid white;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* Button */
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:gold;
+    color:black;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:20px;
+    width:250px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
