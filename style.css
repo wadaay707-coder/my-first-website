@@ -166,3 +166,23 @@ button:hover{
         width:90%;
     }
 }
+.about{
+    text-align:center;
+    padding:80px 20px;
+    background:rgba(255,255,255,0.08);
+    margin:40px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:22px;
+    line-height:1.8;
+    max-width:800px;
+    margin:auto;
+}
