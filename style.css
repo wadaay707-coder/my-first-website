@@ -2,11 +2,11 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background: linear-gradient(to right,#1e3c72,#2a5298);
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
     color:white;
 }
 
@@ -15,7 +15,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:20px 60px;
     background:rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
 }
@@ -28,10 +28,11 @@ nav{
 nav ul{
     display:flex;
     list-style:none;
+    gap:25px;
 }
 
 nav ul li{
-    margin-left:20px;
+    list-style:none;
 }
 
 nav ul li a{
@@ -45,7 +46,7 @@ nav ul li a:hover{
     color:gold;
 }
 
-/* Hero */
+/* Hero Section */
 .hero{
     text-align:center;
     padding:80px 20px;
@@ -53,51 +54,55 @@ nav ul li a:hover{
 }
 
 .hero img{
-    width:150px;
+    width:180px;
+    height:180px;
+    object-fit:cover;
     border-radius:50%;
     border:4px solid white;
     margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:50px;
+    font-size:52px;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size:22px;
-    margin:20px 0;
+    font-size:24px;
+    margin-bottom:25px;
 }
 
 /* Button */
 button{
     padding:15px 35px;
     border:none;
-    border-radius:30px;
+    border-radius:40px;
     background:gold;
     color:black;
     font-size:18px;
+    font-weight:bold;
     cursor:pointer;
     transition:0.3s;
 }
 
 button:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
 }
 
 /* Cards */
 .cards{
     display:flex;
     justify-content:center;
-    gap:20px;
-    padding:50px;
     flex-wrap:wrap;
+    gap:25px;
+    padding:50px 30px;
 }
 
 .card{
     background:rgba(255,255,255,0.1);
+    width:280px;
     padding:30px;
     border-radius:20px;
-    width:250px;
     text-align:center;
     backdrop-filter:blur(10px);
     transition:0.3s;
@@ -107,6 +112,11 @@ button:hover{
     transform:translateY(-10px);
 }
 
+.card h2{
+    margin-bottom:15px;
+}
+
+/* Animation */
 @keyframes fadeIn{
     from{
         opacity:0;
