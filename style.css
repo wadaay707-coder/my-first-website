@@ -12,17 +12,27 @@ body{
 
 /* Navbar */
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:rgba(255,255,255,0.1);
-    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+}
+
+.logo-box{
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.tagline{
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 5px;
 }
 
 nav ul{
@@ -54,8 +64,8 @@ nav ul li a:hover{
 }
 
 .hero img{
-    width:260px;
-    height:260px;
+    width:220px;
+    height:220px;
     object-fit:cover;
     object-position:center 15%;
     border-radius:50%;
@@ -256,4 +266,21 @@ button:hover{
     color: #ddd;
     margin-top: 5px;
     text-align: center;
+}
+.profile-img{
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
