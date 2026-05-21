@@ -185,7 +185,7 @@ button:hover{
     line-height:1.8;
     max-width:800px;
     margin:auto;
-}
+        }
 /* Services */
 .services{
     text-align:center;
@@ -197,19 +197,27 @@ button:hover{
     margin-bottom:40px;
 }
 
+/* Box كبير زي من أنا */
 .services-box{
+    background:rgba(255,255,255,0.08);
+    margin:40px;
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     gap:25px;
 }
 
+/* الكروت */
 .service-card{
-    width:300px;
+    width:280px;
     background:rgba(255,255,255,0.1);
     padding:30px;
-    border-radius:25px;
-    backdrop-filter:blur(10px);
+    border-radius:20px;
+    text-align:center;
     transition:0.3s;
 }
 
@@ -218,11 +226,22 @@ button:hover{
 }
 
 .service-card h3{
+    font-size:28px;
     margin-bottom:15px;
-    font-size:26px;
 }
 
 .service-card p{
     font-size:18px;
     line-height:1.7;
+}
+@media(max-width:768px){
+
+    .services-box{
+        margin:20px;
+        padding:25px;
+    }
+
+    .service-card{
+        width:100%;
+    }
 }
