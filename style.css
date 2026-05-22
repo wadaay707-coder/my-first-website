@@ -371,3 +371,40 @@ button:hover{
     color:black;
     transform:translateY(-8px);
 }
+/* Footer */
+.footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+.footer p{
+    color:white;
+    font-size:18px;
+}
+
+/* زر الرجوع للأعلى */
+.top-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:gold;
+    color:black;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.top-btn:hover{
+    transform:scale(1.1);
+    background:white;
+}
