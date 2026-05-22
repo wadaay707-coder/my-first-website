@@ -501,3 +501,82 @@ body.light-mode .footer{
 body.light-mode .footer p{
     color: white;
 }
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+        background:black;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .tagline{
+        font-size:14px;
+        color:#ddd;
+    }
+
+    /* القائمة فوق */
+    nav ul{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+        list-style:none;
+        margin-top:15px;
+        padding:0;
+        flex-wrap:wrap;
+    }
+
+    nav ul li{
+        list-style:none;
+    }
+
+    nav ul li a{
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+        font-weight:bold;
+    }
+
+    /* الصورة */
+    .hero img{
+        width:180px;
+        height:180px;
+    }
+
+    /* العنوان */
+    .hero h1{
+        font-size:48px;
+        line-height:1.3;
+    }
+
+    .hero p{
+        font-size:22px;
+    }
+
+    /* الصناديق */
+    .card,
+    .service-card,
+    .contact-card,
+    .about{
+        width:90%;
+        margin:auto;
+    }
+
+    /* زر الرجوع */
+    .scroll-top{
+        width:60px;
+        height:60px;
+        font-size:28px;
+        bottom:20px;
+        right:20px;
+    }
+}
