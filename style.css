@@ -336,3 +336,37 @@ button:hover{
         font-size:20px;
     }
 }
+/* Contact */
+.contact{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    background:rgba(255,255,255,0.1);
+    color:white;
+    text-decoration:none;
+    padding:20px 40px;
+    border-radius:20px;
+    font-size:24px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    background:gold;
+    color:black;
+    transform:translateY(-8px);
+}
