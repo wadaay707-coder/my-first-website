@@ -447,19 +447,57 @@ button:hover{
     background: linear-gradient(135deg,#f5f5f5,#dcdcdc);
     color: black;
 }
-
-.light-mode nav{
-    background: white;
+/* Light Mode */
+body.light-mode{
+    background: linear-gradient(135deg,#f2f2f2,#d9d9d9);
+    color: black;
 }
 
-.light-mode .about,
-.light-mode .services-box,
-.light-mode .service-card{
+/* Navbar */
+body.light-mode nav{
+    background: black;
+}
+
+/* النصوص */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode p{
+    color: black;
+}
+
+/* الروابط فوق */
+body.light-mode nav ul li a{
+    color: white !important;
+}
+
+/* صندوق من أنا */
+body.light-mode .about{
     background: rgba(0,0,0,0.08);
     color: black;
 }
 
-.light-mode .footer{
-    background: #ddd;
+/* الخدمات */
+body.light-mode .services-box{
+    background: rgba(0,0,0,0.08);
+}
+
+body.light-mode .service-card{
+    background: rgba(0,0,0,0.08);
     color: black;
+}
+
+/* التواصل */
+body.light-mode .contact-card{
+    background: rgba(0,0,0,0.08);
+    color: black;
+}
+
+/* Footer */
+body.light-mode .footer{
+    background: black;
+}
+
+body.light-mode .footer p{
+    color: white;
 }
