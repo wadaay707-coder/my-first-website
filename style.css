@@ -21,7 +21,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 40px;
-    background:rgba(255,255,255,0.08);
+    background:black;
     backdrop-filter:blur(10px);
     position:sticky;
     top:0;
@@ -67,7 +67,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:white;
+    color:gold;
 }
 
 /* Mobile */
