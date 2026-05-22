@@ -20,12 +20,13 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
+    padding:20px 40px;
     background:rgba(255,255,255,0.08);
     backdrop-filter:blur(10px);
     position:sticky;
     top:0;
     z-index:1000;
+    width:100%;
 }
 
 .logo-box{
@@ -34,7 +35,7 @@ nav{
 }
 
 .logo{
-    font-size:42px;
+    font-size:32px;
     font-weight:bold;
 }
 
@@ -44,10 +45,13 @@ nav{
     margin-top:5px;
 }
 
+/* القائمة */
 nav ul{
     display:flex;
     list-style:none;
     gap:30px;
+    margin:0;
+    padding:0;
 }
 
 nav ul li{
@@ -57,7 +61,7 @@ nav ul li{
 nav ul li a{
     text-decoration:none;
     color:white;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
     transition:0.3s;
 }
@@ -66,6 +70,36 @@ nav ul li a:hover{
     color:gold;
 }
 
+/* Mobile */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:18px;
+        margin-top:15px;
+    }
+
+    nav ul li a{
+        font-size:18px;
+    }
+
+    .logo{
+        font-size:26px;
+    }
+
+    .tagline{
+        font-size:13px;
+    }
+}
 /* ================= HERO ================= */
 
 .hero{
