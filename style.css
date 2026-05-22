@@ -1,6 +1,22 @@
 /* Mobile Responsive */
 @media(max-width:768px){
 
+    .services-box{
+        margin:20px;
+        padding:25px;
+    }
+
+    .service-card{
+        width:100%;
+    }
+}
+
+.tagline{
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+    text-align: center;
+}
     nav{
         flex-direction:column;
         padding:20px;
